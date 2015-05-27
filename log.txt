@@ -1,0 +1,138 @@
+# Group 9 Log
+
+## Revision
+### Description
+
+NOTES:
+1. remember follow the UI layout decided in team meeting 
+2. Dummy user and Timesheets are initialize in databasestub already
+
+## Task Specifics
+-----------------------------------------------------------------
+rule#1 all UI window should have a close button and quit button
+rule#2 If UI window is resizable, it should handle resizing gracefully 
+		- minimum size to prevent overlapping/occluding GUI elements
+		- anchored components where needed
+		
+Task#  Description
+
+0. Implementing a generic window which have bottom part reserved 
+   a quit button and a button with a blank title and blank listener
+
+1. Main.java should display a login window when it starts.
+   a new class call Mainwindow should added under views 
+   package. Within this window there will be a dropdown menu 
+   let user to choose who they are. A title "login", two buttons "login" and "quit"
+   if user choose login, based on the user type (employee,manager) direct to the proper 
+   user screen.
+   optional: show the logined user name on title or somewhere.. 
+
+2. Create a window for employees after login. this window should be a 
+   table view which contains all timesheet entrys for this specific user.
+   every entry in the table should have date,hours,approved,project from database. A button "add
+   new" is also needed(for adding new timesheet), for now this should just be a dummy button
+
+3. Create a window for manager after login. this window should look exact same 
+   as employee window except there is a extra dropdown menu contains a list of
+   employee names work under this manager. the manager should be able to select
+   users from that list. A timesheet window for the selected user should pop up.
+   This new window should just show a tableview of timesheets for that employee
+   (See images/managerview.jpg for an idea of the layout)
+
+4. a new window for user to input timesheet entry is needed. this window should contain
+   input fields for project(dropdown list), hours(text input field), date(http://www.eclipse.org/swt/widgets/)
+   this window will link to the "add new" button in #2 and #3
+
+##Pending work divided
+No.	TimeEst  Task          
+---------------------------------------------------------------------------------  
+
+
+        
+## Assigned Work
+	Date  Name  TimeEst  TimeAct  Task          
+---------------------------------------------------------------------------------
+	6/18  Ryan  4 hours  		  when double click on a timesheet entry in employee window. A auto-populated creation window will pop up. User can modify timesheet info in this window 
+	6/13  Ryan  1 hour			  Alter timesheet creation window to auto-populate when passed a timesheet object.
+	6/13  Ryan  1 hour            Alter submit button to save timesheet to a list of pending changes , if it is passed a timesheet object. 
+	6/18  Dale  4 hours           Create finance user window 
+	
+
+## Completed Work
+	Date  Name  TimeEst  TimeAct  Task          
+---------------------------------------------------------------------------------
+	5/24  Dale  4 hours  5 hours  Make a generic window for later use 
+	5/24  Kun   6 hours  6 hours  Initial step(Stub database, business package, business objects )
+	5/26  Dale  4 hours  4 hours  Make a login window
+	5/31  Ryan  1 hour   1 hour   Clean up login window, add password field.
+	6/01  Dylan 1 hour   2 hours  Create a GUI for Employee type
+	6/01  Dale  3 hours  3 hours  Create a GUI for the Manager user type (see #3 in spec)	  
+	6/02  Dale  1 hour   1.5 hour initial version of complie.bat
+	6/03  Dylan 3 hours  3 hours  Create a form-like GUI for employees to input new timesheet info (see #4 in spec)
+	6/01  Ryan  4 hours  6 hours  Improved GUI for new timesheet. Added error handling, restricted input to acceptable values.
+	6/03  Dylan	1 hour	 1 hour	  Create the "employee details" window (used by employee and manager GUIs)
+	6/03  Dylan 1 hour   .5 hour  Implement employee window functionality (username/details)
+	6/03  Kun   2 hour   1 hours  calculation methods added in calculation class for project stats
+	6/03  Kun   5 hours  6 hours  Throughly test existing code(models, persistent, business)
+	6/04  Kun   1 hour   1 hours  refactoring compile.bat create run.bat and runtest.bat
+	6/04  Dylan 1 hour	 1 hour	  Table in the "details" window now populates
+	6/04  Kun   1 hours  1 hour   reviewing fixing inconsistency 
+	6/04  Ryan  4 hours  4 hours  Bug checks, disabled parent windows while child is open.
+	6/04  Dale  1 hour   2.5 hours  Set up table to dynamically display content (Manager & Employee windows), added date column
+	6/04  Evan  3 hours  3 hours  refactor and improve test quality 
+	6/04  Evan  2 hours  .5 hr    create a class to call all the tests 
+	6/05  Dale  0.25hr   1 hour	  Get all test methods generating output for required handin file.
+	6/05  Dylan 2 hours	 2 hours  Write readme.txt
+	6/05  Ryan 	4 hours	 4 hours  More error handling on timesheet entry window. Fixed EMS icon path.
+	6/13  Dale  5 hours  6 hours  Implement EMSDB class, this class extends HBSQL and implements database interface. No Existing high level code should be affected
+	6/13  Kun   3 hours  1 hour   Working report window and modified Manager Window UI to fit a 'project report' button
+	6/14  Kun   2 hours  1 hour   improve the existing Employee detail window to display a percentage column and associated calculation functions
+	6/18  Evan	1 hour	 1 hour	  Create RestoreDB.bat & BackupDB.bat
+	6/18  Dylan 1 hour   1 hour   Create finance user object	
+	6/18  Kun   3 hours  2 hours  Create a new table and associated methods for title table(id,title,wage)
+	6/18  Kun   1 hour   1 hours  Create a summary table window for finance window
+	6/19  Dale  2 hours	 1 hour	  Generate current pay period 
+	6/19  Dylan 1 hour	 1 hour	  Cleaned up presentation code; fixed size discrepancies between employee/manager windows; overall/details % width fixed (no more scroll bar)
+	6/20  Dale  3 hours  2 hours  Calculate information over the current pay period
+	6/20  Dylan 2 hour   2.5 hr   Create a paystub window for finance window
+	6/20  Evan	4 hours	 5 hours  Create notification class and list number of pending notifications in manager window
+	6/22  Kun   1 hour   1 hours  split calculation class to three, change schema of timesheet table and fixings  
+	6/22  Kun   2 hour   2 hours  rewrite tests for Calculatehour class and financialcalculato class
+	6/22  Dylan 1 hour   1 hour   Update readme.txt
+	6/23  Kun   0.5 hour 0.5 hours  new column in manager and employee window to show end date
+	6/24  Kun   5 hour   5 hours  rewrite tests for stubdb, accesstimesheet,  timesheet, title, project.
+
+## Notes
+	Date  Reporter  Note
+---------------------------------------------------------------------------------
+	
+## Existing Bugs
+	Date  Reporter  BugReport
+---------------------------------------------------------------------------------
+	6/16  Dale		Month displayed on table is one off from month in database, (indexing starting at 0 vs. 1)
+		
+## Fixed Bugs
+	Date  Name  Fix
+---------------------------------------------------------------------------------
+	6/01  Dale  Set a minimum size restriction on EmployeeWindow to prevent overlapping GUI elements.
+	6/04  Dylan Fixed submit (hours never calculated)
+	6/05  Dylan Disabled Employee window while Employee Details window is up (all other disables working)
+	6/19  Dylan Fixed Employee/Manager windows popping to the back after closing Details/Overall/New Timesheet windows (shell.forceActive())
+	6/19  Dylan Increased the size restriction on the Manager window to prevent overlapping GUI elements.
+	6/24  Kun   input date is a month later
+	
+## Team Meetings
+    Date  Time       Names						Purpose
+---------------------------------------------------------------------------------
+	05/22 3:15-6:00  Ryan/Kun/Dale	 			Setting up CVS repository
+	05/23 2:00-6:00  Dylan/Kun/Dale 			Restructuring interface with database, initial GUI development
+	05/24 3:00-6:00  Dylan/Kun/Dale 			Delegate Tasks; Discuss existing code and how to work with it
+	05/29 3:00-5:00  Ryan/Kun/Dale/Dylan		Discussed possibilities for adding more logic, which will increase our test count to a reasonable level
+	05/30 2:00-4:00  Ryan/Kun/Dale/Evan			Settled on design of Manager/Employee window
+	06/01 2:00-6:00  Ryan/Kun/Dale/Dylan	    implementation, pair programming, GUI for Employee & Manager Window created & linked to Login Window
+	06/03 3:00-6:00  Dylan/Kun/Dale				Expanding upon existing tests, GUI for Employee hours entry, Time logic (informal meeting)
+	06/04 2:00-6:00  Ryan/Kun/Dale/Dylan/Evan	Finishing iteration 1: streamlining tests, creating batch files, readme
+	06/05 3:00-									Finalizing hand-in for iteration 1
+	06/12 3:00-5:00  Dale/Kun/Evan				Iteration 2 planning: detailed user stories
+	
+## Rationale Behind Major Design Decisions

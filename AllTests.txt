@@ -1,0 +1,201 @@
+
+Starting EmployeeTest: creating employee
+Finished EmployeeTest: creating employee
+
+Starting EmployeeTest: getting user's last name
+Finished EmployeeTest: getting user's last name
+
+Starting EmployeeTest: setting manager
+Finished EmployeeTest: setting manager
+
+Starting EmployeeTest: getting username
+Finished EmployeeTest: getting username
+
+Starting EmployeeTest: getting user ID
+Finished EmployeeTest: getting user ID
+
+Starting EmployeeTest: getting user's first name
+Finished EmployeeTest: getting user's first name
+
+Starting EmployeeTest: getting manager's ID
+Finished EmployeeTest: getting manager's ID
+
+Starting ProjectTest: creating project
+Finished ProjectTest: creating project
+
+Starting ProjectTest: getting project name
+Finished ProjectTest: getting project name
+
+Starting ProjectTest: checking for valid project
+Finished ProjectTest: checking for valid project
+
+Starting TimesheetTest: creating invalid timesheet
+Finished TimesheetTest: creating invalid timesheet
+
+Starting TimesheetTest: creating timesheet
+Finished TimesheetTest: creating timesheet
+
+Starting TimesheetTest: getting user ID
+Finished TimesheetTest: getting user ID
+
+Starting TimesheetTest: setting project
+Finished TimesheetTest: setting project
+
+Starting TimesheetTest: checking invalid name
+Finished TimesheetTest: checking invalid name
+
+Starting TimesheetTest: checking invalid project
+Finished TimesheetTest: checking invalid project
+
+Starting TimesheetTest: checking invalid start time
+Finished TimesheetTest: checking invalid start time
+
+Starting TimesheetTest: checking invalid end time
+Finished TimesheetTest: checking invalid end time
+
+Starting DatabaseStubTest: inserting user
+Finished DatabaseStubTest: inserting user
+
+Starting DatabaseStubTest: inserting project
+Finished DatabaseStubTest: inserting project
+
+Starting DatabaseStubTest: inserting timesheet
+Finished DatabaseStubTest: inserting timesheet
+
+Starting DatabaseStubTest: getting all users
+Finished DatabaseStubTest: getting all users
+
+Starting DatabaseStubTest: getting all timesheets
+Finished DatabaseStubTest: getting all timesheets
+
+Starting DatabaseStubTest: getting project
+Finished DatabaseStubTest: getting project
+
+Starting AccessProjectTest: inserting valid project
+Finished AccessProjectTest: inserting valid project
+
+Starting AccessProjectTest: getting all projects
+Finished AccessProjectTest: getting all projects
+
+Starting AccessProjectTest: inserting null project
+Finished AccessProjectTest: inserting null project
+
+Starting AccessTimesheetTest: getting accessor without database
+Finished AccessTimesheetTest: getting accessor without database
+
+Starting AccessTimesheetTest: getting all of user's timesheets
+Finished AccessTimesheetTest: getting all of user's timesheets
+
+Starting AccessTimesheetTest: getting timesheet from invalid project
+Finished AccessTimesheetTest: getting timesheet from invalid project
+
+Starting AccessTimesheetTest: inserting null timesheet
+Finished AccessTimesheetTest: inserting null timesheet
+
+Starting AccessTimesheetTest: inserting valid timesheet
+Finished AccessTimesheetTest: inserting valid timesheet
+
+Starting AccessTimesheetTest: getting all timesheets
+Finished AccessTimesheetTest: getting all timesheets
+
+Starting AccessTimesheetTest: getting user's timesheet
+Finished AccessTimesheetTest: getting user's timesheet
+
+Starting AccessTimesheetTest: getting user's timesheet
+Finished AccessTimesheetTest: getting user's timesheet
+
+Starting AccessTimesheetTest: getting timesheet from invalid user
+Finished AccessTimesheetTest: getting timesheet from invalid user
+
+Starting AccessTimesheetTest: getting user's timesheet
+Finished AccessTimesheetTest: getting user's timesheet
+
+Starting AccessTimesheetTest: setting valid user
+Finished AccessTimesheetTest: setting valid user
+
+Starting AccessTimesheetTest: setting invalid user
+Finished AccessTimesheetTest: setting invalid user
+
+Starting AccessUserTest: accessing user without database
+Finished AccessUserTest: accessing user without database
+
+Starting AccessUserTest: getting current username from null user
+Finished AccessUserTest: getting current username from null user
+
+Starting AccessUserTest: getting userID without login
+Finished AccessUserTest: getting userID without login
+
+Starting AccessUserTest: inserting new user
+Finished AccessUserTest: inserting new user
+
+Starting AccessUserTest: accessing all users
+Finished AccessUserTest: accessing all users
+
+Starting AccessUserTest: logging valid user in
+Finished AccessUserTest: logging valid user in
+
+Starting AccessUserTest: logging invalid user in
+Finished AccessUserTest: logging invalid user in
+
+Starting AccessUserTest: selecting a user
+Finished AccessUserTest: selecting a user
+
+Starting AccessUserTest: exiting user
+Finished AccessUserTest: exiting user
+
+Starting AccessUserTest: exiting invalid user
+Finished AccessUserTest: exiting invalid user
+
+Starting AccessUserTest: getting user type without login
+Finished AccessUserTest: getting user type without login
+
+Starting AccessUserTest: getting user type
+Finished AccessUserTest: getting user type
+
+Starting AccessUserTest: getting manager's member
+Finished AccessUserTest: getting manager's member
+
+Starting AccessUserTest: getting employee's member
+Finished AccessUserTest: getting employee's member
+
+Starting AccessUserTest: getting null member
+Finished AccessUserTest: getting null member
+
+Starting AccessUserTest: getting current user name
+Finished AccessUserTest: getting current user name
+
+Starting AccessUserTest: getting current user id
+Finished AccessUserTest: getting current user id
+
+Starting AccessUserTest: logging out user
+Finished AccessUserTest: logging out user
+
+Starting AccessUserTest: inserting null user
+Finished AccessUserTest: inserting null user
+
+Starting CalculationTest: getting employee's project hours
+Finished CalculationTest: getting employee's project hours
+
+Starting CalculationTest: invalid employee
+Finished CalculationTest: invalid employee
+
+Starting CalculationTest: invalid project
+Finished CalculationTest: invalid project
+
+Starting CalculationTest: checking next week in bounds
+Finished CalculationTest: checking next week in bounds
+
+Starting CalculationTest: checking last week in bounds
+Finished CalculationTest: checking last week in bounds
+
+Starting AccessUserTest: getting hours by project
+Finished AccessUserTest: getting hours by project
+
+Starting CalculationTest: checking current time in bounds
+Finished CalculationTest: checking current time in bounds
+
+Starting CalculationTest: checking out of bounds date
+Finished CalculationTest: checking out of bounds date
+
+Starting DataBaseAccessTest: setting up database
+Finished DataBaseAccessTest: setting up database
